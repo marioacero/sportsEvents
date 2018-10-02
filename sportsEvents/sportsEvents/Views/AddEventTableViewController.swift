@@ -40,7 +40,9 @@ class AddEventTableViewController: UITableViewController {
     }
     
     func showAlertError() {
-        
+        let alert = UIAlertController(title: "All field requireds", message: "Please complete all fields to add an event", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     private func setDatePicker( sender: UITextField) {
